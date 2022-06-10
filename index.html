@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonotina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <ul class="navbar-nav nav-pills w-100 nav-justified">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#services-section">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#experts-section">Experts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item btn-primary">
+                <a class="nav-link active" href="book.html">Book Now</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="container-fluid rounded-3" id="header">
+        <img src="https://fontmeme.com/permalink/220604/9175293ee593bb7bff409c4c89e0d671.png" alt="calligraphy-fonts" style="position: absolute; top: 10%; left: 5%">
+        <p class="container h3 text-white" style="width: 60%; font-size: 6vh; position: absolute; bottom: 10%; left: 5%;">
+           Welcome, friend! At <span class="text-info">Sonotina</span>, you can find only the <span class="text-info">most premium</span> of services that will put your body to sleep
+           and your <span class="text-info">mind at ease</span>. Select from a <span class="text-info">wide variety</span> of specialties that suit your needs, from peaceful music to
+           white noise. Just lie down and relax; enjoy the <span class="text-info">best sleeps</span> of your life.
+        </p>
+        <div class="btn-group-vertical" style="position: absolute; right: 5%; bottom: 10%; width: 25%; height: 50%;">
+            <button class="btn btn-primary shadow header-btn rounded-pill" onclick="window.location.href='#services-section'">
+                Services
+            </button>
+            <button class="btn btn-secondary shadow rounded-pill header-btn" onclick="window.location.href='#experts-section'">
+                Experts
+            </button>
+        </div>
+    </section>
+    <section class="p-5 container-fluid rounded-3" id="services-section">
+        <h2 class="text-center display-2">Services</h2>
+        <div class="divider"></div>
+        <div class="container mx-auto shadow" id="services">
+            <div class="card bg-dark d-inline-block mx-5">
+                <img class="card-img-top" src="Resources/Services/harp.jpg" alt="" style="height: 50%; object-fit: cover;">
+                <div class="card-body text-white">
+                    <h4 class="card-title">Lullaby Serenade ($32)</h4>
+                    <p class="card-text">Snuggle up for a good night's sleep with a lullaby-themed serenade session. Suitable for
+                        adults and children alike.
+                    </p>
+                    <a onclick="chooseService(1)" class="btn btn-primary" style="position: absolute; bottom: 5%">Book Service</a>
+                </div>
+            </div>
+            <div class="card bg-dark d-inline-block mx-5">
+                <img class="card-img-top" src="Resources/Services/piano.jpg" alt="" style="height: 50%; object-fit: cover;">
+                <div class="card-body text-white">
+                    <h4 class="card-title">Classic Serenade ($49)</h4>
+                    <p class="card-text">Enjoy a relaxing dose of Gymnopédie No.1
+                        and Moonlight Sonata 1<sup>st</sup> Movement to accompany you into your dreams.
+                    </p>
+                    <a onclick="chooseService(2)" class="btn btn-primary" style="position: absolute; bottom: 5%">Book Service</a>
+                </div>
+            </div>
+            <div class="card bg-dark d-inline-block mx-5">
+                <img class="card-img-top" src="Resources/Services/white-noise.jpg" alt="" style="height: 50%; object-fit: cover;">
+                <div class="card-body text-white">
+                    <h4 class="card-title">White-Noise ($24)</h4>
+                    <p class="card-text">Choose from a plethora of machines and trinkets that will satisfy your white-noise
+                        needs. Be ready to fall asleep in seconds.
+                    </p>
+                    <a onclick="chooseService(3)" class="btn btn-primary" style="position: absolute; bottom: 5%">Book Service</a>
+                </div>
+            </div>
+            <div class="card bg-dark d-inline-block mx-5">
+                <img class="card-img-top" src="Resources/Services/mic.jpg" alt="" style="height: 50%; object-fit: cover;">
+                <div class="card-body text-white">
+                    <h4 class="card-title">ASMR ($40)</h4>
+                    <p class="card-text">Close your eyes as our ASMR specialists work their magic to deliver you the strongest
+                        tingles imagineable.
+                    </p>
+                    <a onclick="chooseService(4)" class="btn btn-primary" style="position: absolute; bottom: 5%">Book Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-5 container-fluid rounded-3" id="experts-section">
+        <h2 class="text-center display-2">Experts</h2>
+        <div class="divider" style="background-color: rgb(0, 0, 143);"></div>
+        <div class="container mx-auto" id="experts">
+            <div class="card bg-primary d-inline-block mx-5">
+                <img class="card-img-top" src="Resources/Experts/Anita S. Leep.jpg" alt="" style="height: 50%; object-fit: cover; object-position: top;">
+                <div class="card-body text-white">
+                    <h4 class="card-title">Anita S. Leep (4.4/5★)</h4>
+                    <p class="card-text">Being one of the founding members of Sonotina, Anita has both the experience
+                        and the passion of the craft. She is specialized in all the provided services.
+                    </p>
+                    <a href="" class="btn btn-secondary" style="position: absolute; bottom: 5%">Book Expert</a>
+                </div>
+            </div>
+            <div class="card bg-primary d-inline-block mx-5">
+                <img class="card-img-top" src="Resources/Experts/Leon Matt-Reiss.jpg" alt="" style="height: 50%; object-fit: cover; object-position: top;">
+                <div class="card-body text-white">
+                    <h4 class="card-title">Léon Matt-Reiss (3.9/5★)</h4>
+                    <p class="card-text">Having studied in multiple pristigious schools of music, Léon certainly has
+                        the skills necessary to put you to a good night's rest with his instrumentation.
+                    </p>
+                    <a href="" class="btn btn-secondary" style="position: absolute; bottom: 5%">Book Expert</a>
+                </div>
+            </div>
+            <div class="card bg-primary d-inline-block mx-5">
+                <img class="card-img-top" src="Resources/Experts/Gibton Gols.jpg" alt="" style="height: 50%; object-fit: cover; object-position: top;">
+                <div class="card-body text-white">
+                    <h4 class="card-title">Gibton Gols (4.7/5★)</h4>
+                    <p class="card-text">Skilled and confident with her spoken-word and empathetic abilities, Gibton
+                        will surely demonstrate mastery over ASMR and white-noise creation.
+                    </p>
+                    <a href="" class="btn btn-secondary" style="position: absolute; bottom: 5%">Book Expert</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid bg-dark h-25 rounded-3 p-0" id="footer">
+        <div class="row h-100">
+            <div class="col d-flex align-items-center justify-content-center"><p class="display-4 text-secondary">Sonotina</p></div>
+            <div class="col d-flex align-items-center justify-content-center"><p class="text-muted">
+                Call (613) 823 - 4262
+            </p></div>
+            <div class="col d-flex align-items-center justify-content-center"><p class="text-muted">
+                3777 Strandherd Dr, Nepean, ON K2J 4J7
+            </p></div>
+            <div class="col d-flex align-items-center justify-content-center"><p class="text-muted">
+                Open 19:00-1:00 every night
+            </p></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    html, body { height: 100%; width: 100%; scroll-behavior: auto; }
+
+    .divider {
+        width: 90%;
+        height: 2px;
+        background-color: gray;
+        box-shadow: 0 0 2px black;
+        border-radius: 100%;
+        margin: auto;
+    }
+
+    nav {
+        background-image: url('Resources/stars2.jpg');
+        background-position: center;
+        height: 8vh;
+    }
+    .nav-item {
+        font-size: 4vh;
+    }
+    .nav-item:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #book-now:hover {
+        background-color: rgb(0, 0, 117);
+    }
+
+    #header {
+        position: relative; 
+        height: 100vh; 
+        background-blend-mode: darken;
+        background-image: url('Resources/stars.jpg'); 
+        background-repeat: no-repeat; 
+        background-size: 100vw 100vh;
+    }
+    .header-btn {
+        margin-bottom: 10%;
+        font-size: 300%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #services-section {
+        height: 100vh;
+        background-image: linear-gradient(to bottom right, rgb(0, 187, 255), rgb(0, 0, 143));
+    }
+    #services {
+        margin: 5%;
+        margin-right: 0%;
+        padding: 2%;
+        width: 100%;
+        height: 70%;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+    #services::-webkit-scrollbar {
+        height: 10px;
+    }
+    #services::-webkit-scrollbar-track {
+        background-color: rgb(0, 0, 143);
+        box-shadow: inset 0 0 5px rgb(0, 187, 255);
+        border-radius: 5px;
+    }
+    #services::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(rgb(202, 202, 202), rgb(80, 80, 80));
+        border-radius: 5px;
+    }
+    #services .card {
+        width: 40%;
+        height: 100%;
+        white-space: normal;
+    }
+    
+    #experts-section {
+        height: 100vh;
+        background-image: linear-gradient(to bottom right, rgb(202, 202, 202), rgb(80, 80, 80));
+    }
+    #experts {
+        margin: 2%;
+        width: 100%;
+        height: 80%;
+        white-space: nowrap;
+    }
+    #experts .card {
+        width: 25%;
+        height: 100%;
+        white-space: normal;
+    }
+</style>
+</html>
